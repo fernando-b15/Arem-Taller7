@@ -1,6 +1,10 @@
 # Arem-Taller7
 Este laboratorio fue heccho con el fin de barcar los conceptos del servici de autoescalamiento de instancias ec2 para mejorar rendimineto y por medio de un balanceador de carags recibir peticiones y en caso de necesitar mas cpu se cera una nueva instancia ec2 con el servicio que tienen todas las intancias que ya estaban activas hasat el momento,En este caso se desarrollo un aplicacion web que calcula el producto intreno de dos matrices y retorna en un json de respuesta la resultado o la matriz resultante del producto intreno de dos matrices m1 y m2
 
+# Despligue
+
+  * [![CircleCI](https://circleci.com/gh/fernando-b15/Arem-Taller7.svg?style=svg&circle-token=949cace400f254fdd6e4aedb04b858a837217b14)](https://app.circleci.com/pipelines/github/fernando-b15/Arem-Taller7/1/workflows/525beb91-a0b8-4f98-8501-8095169fa5bc/jobs/1)
+
 # Pre-Requisitos
 
 Para el uso de la aplicacion se requiere que el computador tenga instalados los siguientes prerequisitos:
@@ -11,7 +15,8 @@ Para el uso de la aplicacion se requiere que el computador tenga instalados los 
    * Docker
    * Newman
 # Imagen DockerHub
-  * (Calculadora Producto Interno)[https://hub.docker.com/repository/docker/fernando15/calculadoraproductointerno]
+  * [Calculadora Producto Interno](https://hub.docker.com/repository/docker/fernando15/calculadoraproductointerno)
+  
 # Despliegue en AWS EC2
 Primeramente despues de crear nuestra instanci Ec2 e instalar docker vemos que no hya ningun container hasta el momento
 ![i1](https://github.com/fernando-b15/Arem-Taller7/blob/master/img/test1.PNG);
@@ -72,10 +77,9 @@ Ahora con ayuda de newman desde la carpeta postamn vamos a enviar 500 peticiones
 Ahora por ultimo podemos ver que con la recepcion de 500 peticiones para calcular el producto interno de dos matrices se supero el 75% de procesamiento de la instancia y se desplegouna nueva instancia con el servicio de producto interno de dos matrices
 ![i1](https://github.com/fernando-b15/Arem-Taller7/blob/master/img/test28.PNG);
 
+# Documentacion
 
-
-
-
+Para acceder a la documentacion de la calculadoar del producto interno de matrices ,ingrese al siguiente enlace [apidocs](https://github.com/fernando-b15/Arem-Taller7/blob/master/apidocs) 
 
 # Licencia
 
